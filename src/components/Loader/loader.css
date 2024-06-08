@@ -1,0 +1,31 @@
+.spinner {
+  @apply relative inline-block;
+  font-size: 60px;
+  width: 1em;
+  height: 1em;
+}
+
+.spinner.center {
+  @apply absolute left-0 right-0 top-0 bottom-0 m-auto;
+}
+
+.spinner .spinner-blade {
+  @apply absolute bg-transparent;
+  left: 0.4629em;
+  bottom: 0;
+  width: 0.074em;
+  height: 0.2777em;
+  border-radius: 0.0555em;
+  transform-origin: center -0.2222em;
+  animation: spinner-fade9234 1s infinite linear;
+}
+
+@keyframes spinner-fade9234 {
+  0% {
+    background-color: #69717d;
+  }
+
+  100% {
+    background-color: transparent;
+  }
+}
